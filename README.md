@@ -26,35 +26,15 @@ Group Members:
 
 - Joshua Balderas
 
- 
+# Project Description
 
-Selected Features (Refined per instructor consultation):
-   - Identifiers & Temporal: Serial Number, List Year, Date Recorded
+For our Midterm project, our team selected a Real Estate Sales dataset from Kaggle. The dataset was reviewed and approved by our instructor. The working dataset contains approximately 25,000 records and 10 selected features, including property location, assessed value, sale amount, property type, residential type, sales ratio, and transaction date information.
 
-   - Geographic & Location: Town, Address
+The purpose of this project is to perform Exploratory Data Analysis (EDA) and data preprocessing using Python in Jupyter Notebook. The dataset will first be divided programmatically into 70% training data and 30% testing data. All EDA and preprocessing will be performed only on the training dataset, while the testing dataset will remain untouched.
 
-   - Valuation & Financials: Assessed Value, Sale Amount, Sales Ratio
+The preprocessing process will include identifying and handling missing and invalid values, checking duplicate records, and preparing categorical and numerical features. Missing categorical values will be handled using an "Unknown" category. Feature engineering will also be performed by extracting Sale Year and Sale Month from the original transaction date.
 
-   - Classification Attributes: Property Type, Residential Type
+Categorical features such as Town, Property Type, and Residential Type will be converted into numerical values using One-Hot Encoding. The Assessed Value feature will be normalized using a log transformation and then standardized using StandardScaler. Matplotlib visualizations will be used to compare the data before and after preprocessing.
+For future machine learning work, the prepared dataset will be used to develop a Supervised Learning Regression model. The target variable will be Sale Amount, with the future objective of predicting real estate sale prices using property and transaction characteristics.
 
-   (Note: Excluded metadata identifiers and trailing blank columns programmatically in Python).
-
- 
-
-Summary of Planned Pre-Processing (Midterm Deliverable):
-   - Train/Test Split: Programmatic 70% Train / 30% Test split using Scikit-Learn; test partition left untouched in cold storage.
-
-   - Missing Value Imputation: Impute missing entries in 'Property Type' and 'Residential Type' using explicit indicator labels ('Unspecified' / 'Non-Residential'); address nulls filled with 'Unknown Address'.
-
-   - Categorical Encoding: One-hot encode nominal categories ('Property Type', 'Residential Type').
-
-   - Normalization & Scaling: Apply log-transformation (log1p) to skewed monetary fields ('Sale Amount', 'Assessed Value'), followed by StandardScaler standardization.
-
-   - Visual Verification: Generate Matplotlib side-by-side distribution histograms comparing raw vs. normalized distributions and class balance counts.
-
- 
-
-Proposed Downstream Machine Learning Problem (Finals):
-   - Supervised Regression: Train regression models (Linear Regression, Random Forest, XGBoost) to predict property 'Sale Amount' using assessed valuations, location, and property characteristics.
-
-   - Binary Classification: Classify whether a real estate transaction is undervalued ('Sales Ratio' < 0.70) versus standard market valuation.
+The final result of the Midterm will be a cleaned and processed training dataset that can be used during the Final Project to train and evaluate different machine learning regression models.
