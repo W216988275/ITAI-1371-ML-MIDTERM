@@ -5,6 +5,8 @@ Team: 14274 2_ITAI1371
 
 Project Title: Exploratory Data Analysis & Real Estate Price Modeling
 
+Project Link: https://github.com/W216988275/ITAI-1371-ML-MIDTERM.git 
+
 Course: Mid Term - Exploratory Data Analysis
 
 Dataset Source: Connecticut Real Estate Sales 2001-2021 (Kaggle)
